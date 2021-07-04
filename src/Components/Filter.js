@@ -1,12 +1,12 @@
 import './Filter.scss'
-import { Container, Button, Dropdown, DropdownButton } from 'react-bootstrap'
+import { Container, Button, Dropdown, DropdownButton, Row, Col } from 'react-bootstrap'
 
 function Filter() {
   return(
     <div className="filter-container">
-      <Container className="list-filter">
-        <div className="area">
-          <h1>Area</h1>
+      <Container>
+        {/* <div className="area">
+          <p>Area</p>
           <DropdownButton id="dropdown-basic-button" title="Dropdown button">
             <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
             <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
@@ -14,15 +14,47 @@ function Filter() {
           </DropdownButton>
         </div>
         <div className="checkin">
-          <h1>Check in</h1>
+          <p>Check in</p>
         </div>
         <div className="checkout">
-          <h1>Check out</h1>
+          <p>Check out</p>
         </div>
         <div className="kamar">
-          <h1>Kamar</h1>
+          <p>Kamar</p>
         </div>
-        <Button variant="success">Search</Button>
+        <Button variant="success">Search</Button> */}
+        <Row>
+          <Col><p style={{textAlign: "left"}}>Area</p></Col>
+          <Col><p style={{textAlign: "left"}}>Check in</p></Col>
+          <Col><p style={{textAlign: "left"}}>Check out</p></Col>
+          <Col><p style={{textAlign: "left"}}></p></Col>
+        </Row>
+        <Row>
+          <Col className="d-flex justify-content-start">
+            <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </DropdownButton>
+          </Col>
+          <Col className="d-flex justify-content-start">
+            <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </DropdownButton>
+          </Col>
+          <Col className="d-flex justify-content-start">
+            <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+              <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+              <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </DropdownButton>
+          </Col>
+          <Col className="d-flex justify-content-start">
+            <Button variant="success">Button</Button>
+          </Col>
+        </Row>
       </Container>
     </div>
   )
