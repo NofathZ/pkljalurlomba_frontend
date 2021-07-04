@@ -1,17 +1,19 @@
-import { Container } from 'react-bootstrap'
+import { Container, Col, Row } from 'react-bootstrap'
 import './AboutUs.scss'
 import AboutUsIcon from './img/about-us-icon.svg'
 
 function AboutUs() {
   return(
-    <Container className="d-flex">
-      <div className="image">
-        <img src={AboutUsIcon} />
-      </div>
-      <div className="desc">
-        <h1 className="title-desc">About Us</h1>
-        <p className="desc-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac tempus eu, sit in massa tortor dictum non at. Aliquet egestas quisque at egestas elit in velit lorem ut. Sed accumsan, diam ullamcorper elit. Risus risus nulla non eros, purus, magna orci tincidunt lorem. Sit etiam ullamcorper leo adipiscing lorem.</p>
-      </div>
+    <Container>
+      <Row>
+        <Col>
+            <img src={AboutUsIcon} />
+        </Col>
+        <Col className="description">
+          <h1 className="title-desc" style={{fontWeight:"bold"}}>About Us</h1>
+          <p className="desc-desc">Staylo is a solution for you who live in Jakarta and tired of staying at home during the pandemic and want a new vibes. Staylo provides online hotel booking services with various conveniences.</p>
+        </Col>
+      </Row>
     </Container>
   )
 }

@@ -107,11 +107,11 @@ $card-height: 351px;
 
 
   label.price {
-    border: 2px solid black;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    font-size: 14px;
 
     label {
       margin: 0;
@@ -120,7 +120,6 @@ $card-height: 351px;
   }
 
   label.location {
-    border: 2px solid black;
 
     img, label {
       margin: 0;
@@ -135,4 +134,8 @@ $card-height: 351px;
     display: flex;
     justify-content: space-between;
   }
+}
+
+.container-recomendation {
+  margin-bottom: 65px;
 }

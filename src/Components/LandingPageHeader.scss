@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 .landing-page-header {
   width: 100vw;
   height: 95vh;
   background-color: black;
+  margin-bottom: 124px;
 }
 
 .landing-page-header-background {
@@ -25,13 +28,14 @@
   color: white;
 }
 
-h1.landing-page-title {
-  font-family: 'Poppins', sans-serif;
+.landing-page-title, .green-high {
+  // font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 65px;
-  font-weight: bolder;
 }
 
-p.landing-page-text {
+.landing-page-text {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
 }
@@ -60,4 +64,64 @@ p.landing-page-text {
 .check-in-out {
   display: flex;
   justify-content: space-between;
+}
+
+
+
+
+
+.pic-ctn {
+  // width: 100vw;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+  border-radius: 20px;
+  width: 300px;
+  // height: 200px;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
 }

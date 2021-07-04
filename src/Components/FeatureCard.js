@@ -8,7 +8,7 @@ function FeatureCard(props) {
       <center>
         <img src={props.icon} />
         <Card.Body>
-          <Card.Title>{props.title}</Card.Title>
+          <Card.Title style={{fontWeight:"bold"}}>{props.title}</Card.Title>
           <Card.Text>
             {props.content}
           </Card.Text>

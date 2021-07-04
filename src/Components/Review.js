@@ -1,0 +1,9 @@
+import './Review.scss'
+
+function Review() {
+  return(
+    <h1>Review</h1>
+  )
+}
+
+export default Review
