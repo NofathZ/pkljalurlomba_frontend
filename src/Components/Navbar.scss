@@ -1,0 +1,16 @@
+.navbar-style {
+  width: 100%;
+}
+
+.navbar-link {
+  // color: white;
+  color: black;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 5px;
+
+  &:hover {
+    color: white;
+    border-bottom: 1px solid white;
+    transition: .3s;
+  }
+}

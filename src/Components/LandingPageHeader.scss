@@ -1,0 +1,63 @@
+.landing-page-header {
+  width: 100vw;
+  height: 95vh;
+  background-color: black;
+}
+
+.landing-page-header-background {
+  position: absolute;
+  width: 100vw;
+  height: 95vh;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/a/ac/Hotel_Indonesia%2C_photographed_at_dusk%3B_December_2014.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.landing-page-header-background-cover {
+  position: absolute;
+  width: 100vw;
+  height: 95vh;
+  background-color: rgba($color: #000000, $alpha: .5);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  color: white;
+}
+
+h1.landing-page-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 65px;
+  font-weight: bolder;
+}
+
+p.landing-page-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+}
+
+.landing-page-booking-box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 385px;
+  height: 388px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.myCountainer {
+  margin-top: 200px;
+}
+
+.check-in-out {
+  display: flex;
+  justify-content: space-between;
+}
